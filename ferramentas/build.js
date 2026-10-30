@@ -326,7 +326,7 @@ function page(p) {
   h = h.replace(/Cuidador de Idosos no Rio de Janeiro \| CUIDAR IDOSOS/g, T)
     .replace(/Procura cuidador de idosos no Rio de Janeiro\? Conheça o apoio domiciliar e o acompanhamento hospitalar da CUIDAR IDOSOS\. Consulte bairros e disponibilidade\./g, D);
   h = h.replace('<h1>Cuidado para pessoas idosas com <em>respeito e atenção</em> no Rio de Janeiro</h1><p>Apoio para a rotina em casa e acompanhamento hospitalar, com atenção à autonomia e às necessidades de cada pessoa.</p>',
-    '<h1>Cuidador de idosos no Rio de Janeiro, com <em>respeito e atenção</em></h1><p>Cuidador em casa, técnico de enfermagem, acompanhante hospitalar, plantões diurnos e noturnos e apoio em viagens e consultas, com atenção à autonomia e às necessidades de cada pessoa.</p>');
+    '<h1>Cuidador de idosos no Rio de Janeiro, com <em>respeito e atenção</em></h1><p>Cuidador em casa, técnico de enfermagem, acompanhante de idoso no hospital, plantões diurnos e noturnos e apoio em viagens e consultas, com atenção à autonomia e às necessidades de cada pessoa.</p>');
   // cards de serviço -> páginas próprias
   const map = { 'cuidado domiciliar': ['/cuidador-de-idosos-domiciliar-rj.html', 'Saiba mais sobre cuidador em casa'], 'técnico de enfermagem': ['/tecnico-de-enfermagem-para-idosos-rj.html', 'Saiba mais sobre técnico de enfermagem'], 'acompanhamento hospitalar': ['/acompanhante-hospitalar-para-idosos-rj.html', 'Saiba mais sobre acompanhamento hospitalar'], 'plantões': ['/plantao-cuidador-de-idosos-rj.html', 'Saiba mais sobre plantões'], 'suporte à internação': ['/acompanhante-hospitalar-para-idosos-rj.html', 'Saiba mais sobre suporte à internação'], 'concierge e organização da rotina': ['/acompanhante-de-idosos-em-consultas-e-passeios-rj.html', 'Saiba mais sobre concierge e rotina'], 'acompanhamento em passeios': ['/acompanhante-de-idosos-em-consultas-e-passeios-rj.html', 'Saiba mais sobre passeios e consultas'], 'acompanhamento em viagens': ['/acompanhante-de-idosos-para-viagens.html', 'Saiba mais sobre viagens com idosos'] };
   // só nos cards (fora do rodapé, que já foi trocado)
@@ -478,7 +478,7 @@ fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n\nSitem
     'cuidador-de-idosos-recreio-dos-bandeirantes.html': ['Cuidador de Idosos em Recreio dos Bandeirantes | CUIDAR IDOSOS', 'Cuidador de idosos em Recreio dos Bandeirantes, RJ. Apoio em casa e acompanhamento hospitalar. Consulte disponibilidade com Mariano pelo WhatsApp.'],
     'cuidador-de-idosos-ricardo-de-albuquerque.html': [null, 'Cuidador de idosos em Ricardo de Albuquerque, RJ. Apoio em casa e acompanhamento hospitalar. Consulte disponibilidade com Mariano pelo WhatsApp.'],
     'cuidador-ou-tecnico-de-enfermagem-diferencas.html': [null, 'Entenda a diferença entre cuidador de idosos, técnico de enfermagem e acompanhante hospitalar e como escolher o apoio certo para a sua família.'],
-    'index.html': ['Cuidador de Idosos no RJ | Plantão e Acompanhante Hospitalar', 'Cuidador de idosos no Rio de Janeiro, técnico de enfermagem, acompanhante hospitalar e plantões diurnos e noturnos. Consulte bairros e disponibilidade.'],
+    'index.html': ['Cuidador e Acompanhante de Idosos no RJ | Plantão e Hospital', 'Cuidador e acompanhante de idosos no Rio de Janeiro: em casa, no hospital e em plantões de dia ou de noite. Fale com Mariano e consulte bairros e disponibilidade.'],
     'mapa-do-site.html': ['Mapa do Site | CUIDAR IDOSOS — Cuidador de Idosos no RJ', null],
     'plantao-cuidador-de-idosos-rj.html': [null, 'Plantão de cuidador de idosos no Rio de Janeiro: períodos diurnos, noturnos e outros formatos combinados com a família, em casa ou no hospital.'],
     'quanto-custa-cuidador-de-idosos-rj.html': [null, 'O que influencia o valor de um cuidador de idosos no Rio de Janeiro: tipo de profissional, período, local e grau de dependência. Veja como pedir orçamento.'],
@@ -492,6 +492,16 @@ fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n\nSitem
     if (d) { const o = h.match(/<meta name="description" content="(.*?)"/)[1]; h = h.split(o).join(d); }
     fs.writeFileSync(p, h);
   }
+}
+
+// descrição dos bairros: usa "acompanhante de idoso no hospital" (busca real do Search Console)
+for (const f of fs.readdirSync(OUT)) {
+  if (!/^cuidador-de-idosos-.*\.html$/.test(f)) continue;
+  const p = path.join(OUT, f); let h = fs.readFileSync(p, 'utf8');
+  const m = h.match(/<meta name="description" content="(.*?)"/);
+  if (!m || !/acompanhamento hospitalar/.test(m[1])) continue;
+  const d = m[1].replace('acompanhamento hospitalar', 'acompanhante de idoso no hospital');
+  if (d.length <= 165) fs.writeFileSync(p, h.split(m[1]).join(d));
 }
 
 // ---------- CSS: pequenos acréscimos usados pelas novas seções ----------

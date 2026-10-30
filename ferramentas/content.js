@@ -77,8 +77,8 @@ const services = [
     kind: 'service',
     name: 'Acompanhante hospitalar para idosos',
     short: 'Acompanhante hospitalar',
-    title: 'Acompanhante Hospitalar para Idoso no RJ | Plantão Dia e Noite',
-    desc: 'Seu familiar idoso está internado no Rio? Acompanhante hospitalar em plantão de dia ou de noite, para ele não ficar sozinho. Fale com Mariano no WhatsApp.',
+    title: 'Acompanhante de Idoso no Hospital no RJ | Plantão Dia e Noite',
+    desc: 'Precisa de acompanhante para idoso no hospital, no Rio? Plantão de dia ou de noite, para seu familiar não ficar sozinho. Fale com Mariano no WhatsApp.',
     eyebrow: 'ACOMPANHAMENTO HOSPITALAR · RIO DE JANEIRO',
     h1: 'Acompanhante hospitalar <em>para idosos</em> no Rio de Janeiro',
     lead: 'Seu familiar idoso está internado e a família não consegue ficar no hospital? Mariano faz o plantão de dia ou de noite para ele não ficar sozinho, sempre seguindo as regras do hospital.',
@@ -88,6 +88,8 @@ const services = [
     callLine: true,
     hospitals: true,
     sections: [
+      { h: 'Acompanhante de idoso no hospital: quando contratar', html: `
+<p>O acompanhante de idoso no hospital é a pessoa que fica ao lado do paciente durante a internação, de dia ou de noite, para que ele não fique sozinho. É comum procurar esse apoio quando a família trabalha, mora longe ou precisa de revezamento nos plantões. Se você busca um acompanhante para idoso no Rio de Janeiro, informe o hospital e os períodos pelo WhatsApp para consultar a disponibilidade.</p>` },
       { h: 'O direito do idoso a acompanhante na internação', html: `
 <p>O Estatuto da Pessoa Idosa (Lei nº 10.741/2003) assegura à pessoa idosa internada ou em observação o direito a acompanhante, e o órgão de saúde deve oferecer condições adequadas para a permanência em tempo integral, segundo critério médico. Na prática, cada hospital tem regras próprias sobre o número de acompanhantes, horários de troca, identificação e acomodações.</p>
 <p>Quando os familiares não conseguem se revezar, muitas famílias contam com um acompanhante contratado para garantir que a pessoa idosa não fique sozinha, principalmente à noite.</p>` },
@@ -101,6 +103,7 @@ const services = [
 <p>Depois da internação, o cuidado em casa costuma ser diferente do cuidado no hospital. Veja o <a href="/alta-hospitalar-idoso-cuidados-em-casa.html">guia de alta hospitalar do idoso</a> para se preparar e consulte o apoio de <a href="/cuidador-de-idosos-domiciliar-rj.html">cuidador em casa</a> na volta.</p>` }
     ],
     faq: [
+      ['O que faz um acompanhante de idoso no hospital?', 'Faz companhia, observa o conforto da pessoa idosa, avisa a família e chama a equipe do hospital quando necessário. Não substitui médicos nem a equipe de enfermagem e segue as regras da unidade.'],
       ['Em quais hospitais vocês fazem acompanhamento?', 'Informe o hospital pelo WhatsApp. O atendimento depende da disponibilidade, das condições combinadas e das regras de acesso de cada unidade, em hospitais públicos e particulares do Rio de Janeiro.'],
       ['O acompanhante pode ficar à noite?', 'É possível consultar plantões noturnos. Cada hospital tem regras sobre acompanhantes à noite; informe a unidade para confirmar o que é permitido.'],
       ['O acompanhante substitui a equipe de enfermagem do hospital?', 'Não. O acompanhante faz companhia e apoio e comunica a família e a equipe quando necessário. Os cuidados de saúde continuam sendo da equipe do hospital.'],
