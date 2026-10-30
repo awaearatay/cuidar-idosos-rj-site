@@ -1,0 +1,17 @@
+{
+  "proximo_id": 12,
+  "publicados": [
+    {"id": 1, "assunto": "quedas", "data": "2026-10-18"},
+    {"id": 2, "assunto": "cuidador ou tecnico", "data": "2026-10-18"},
+    {"id": 3, "assunto": "alta hospitalar", "data": "2026-10-18"},
+    {"id": 4, "assunto": "plantao noturno", "data": "2026-10-19"},
+    {"id": 5, "assunto": "acompanhante hospitalar", "data": "2026-10-20"},
+    {"id": 6, "assunto": "viagens com idosos", "data": "2026-10-23"},
+    {"id": 7, "assunto": "como escolher cuidador", "data": "2026-10-24"},
+    {"id": 8, "assunto": "quanto custa cuidador", "data": "2026-10-25"},
+    {"id": 9, "assunto": "consultas e exames", "data": "2026-10-26"},
+    {"id": 10, "assunto": "naturopatia", "data": "2026-10-27"},
+    {"id": 11, "assunto": "cuidador em casa", "data": "2026-10-29"}
+  ],
+  "_obs": "id 5 aparece publicado na lista 'Suas postagens' com data 'ontem' (20/10), apesar do log de 20/10 registrar falha. Nao publicar de novo."
+}

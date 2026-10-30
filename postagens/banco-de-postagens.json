@@ -1,0 +1,131 @@
+{
+  "_aviso": "Conteúdo revisado: sem preços, sem promessas de cura, sem depoimentos. Não alterar números/telefone. A tarefa diária usa o campo 'proximo' em estado.json.",
+  "posts": [
+    {
+      "id": 3,
+      "kicker": "ALTA HOSPITALAR",
+      "l1": "Antes da alta, peça ao",
+      "l2": "hospital estes papéis",
+      "bullets": ["Relatório de alta com orientações", "Receitas com doses e horários", "Data e local dos retornos e exames"],
+      "texto": "Vai chegar a alta hospitalar de uma pessoa idosa? Antes de sair, peça ao hospital: o relatório de alta com as orientações para casa, as receitas com doses e horários, e as datas dos retornos e exames. Organizar isso evita imprevistos. Veja o guia completo e converse com Mariano pelo WhatsApp: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/alta-hospitalar-idoso-cuidados-em-casa.html"
+    },
+    {
+      "id": 4,
+      "kicker": "PLANTÃO",
+      "l1": "Plantão noturno:",
+      "l2": "quando faz sentido?",
+      "bullets": ["Para dar segurança à noite", "Cobrir a ausência da família", "Primeiros dias depois da alta"],
+      "texto": "O plantão noturno dá segurança à pessoa idosa e tranquilidade à família. É muito procurado para cobrir a noite, a folga de quem cuida e os primeiros dias depois de uma alta. Consulte períodos e disponibilidade com Mariano pelo WhatsApp: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/plantao-cuidador-de-idosos-rj.html"
+    },
+    {
+      "id": 5,
+      "kicker": "VOCÊ SABIA?",
+      "l1": "O idoso internado tem",
+      "l2": "direito a acompanhante",
+      "bullets": ["Previsto no Estatuto da Pessoa Idosa", "Cada hospital tem suas regras", "Informe a unidade e os horários"],
+      "texto": "O Estatuto da Pessoa Idosa assegura à pessoa idosa internada o direito a acompanhante, conforme critério médico, e cada hospital tem regras próprias de horários e trocas. Se a família não consegue se revezar, consulte o acompanhamento hospitalar com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/acompanhante-hospitalar-para-idosos-rj.html"
+    },
+    {
+      "id": 6,
+      "kicker": "VIAGENS COM IDOSOS",
+      "l1": "Viajar com a pessoa idosa",
+      "l2": "com mais segurança",
+      "bullets": ["Remédios na bagagem de mão", "Peça assistência à companhia aérea", "Leve receitas e contatos de emergência"],
+      "texto": "Viajar com a pessoa idosa exige planejamento: leve os medicamentos na bagagem de mão, receitas e contatos de emergência, e peça assistência especial à companhia aérea com antecedência. Consulte o acompanhamento em viagens com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/acompanhante-de-idosos-para-viagens.html"
+    },
+    {
+      "id": 7,
+      "kicker": "COMO ESCOLHER",
+      "l1": "Cuidador de idosos:",
+      "l2": "o que perguntar antes",
+      "bullets": ["Quais tarefas faz e quais não faz", "Como a família é avisada do dia", "Como funciona a substituição"],
+      "texto": "Antes de contratar um cuidador de idosos, pergunte quais tarefas ele faz e quais não faz, como a família é avisada sobre o dia e como funciona a substituição em caso de falta. Combine também um período de adaptação. Veja o checklist completo no guia e converse com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/como-escolher-cuidador-de-idosos.html"
+    },
+    {
+      "id": 8,
+      "kicker": "ORÇAMENTO",
+      "l1": "O que influencia o valor",
+      "l2": "de um cuidador?",
+      "bullets": ["Tipo de profissional e carga horária", "Plantão noturno, fins de semana", "Grau de dependência e local"],
+      "texto": "Não existe um preço único para cuidador de idosos: o valor depende do tipo de profissional, da carga horária, do período (noite, fins de semana), do grau de dependência e do local. Para um orçamento, envie o bairro e os horários desejados a Mariano pelo WhatsApp: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/quanto-custa-cuidador-de-idosos-rj.html"
+    },
+    {
+      "id": 9,
+      "kicker": "CONSULTAS E EXAMES",
+      "l1": "Antes da consulta,",
+      "l2": "leve estas informações",
+      "bullets": ["Lista dos medicamentos em uso", "Dúvidas e sintomas anotados", "Documentos e carteirinha do plano"],
+      "texto": "Para a consulta da pessoa idosa render mais, leve a lista dos medicamentos em uso, as dúvidas e os sintomas anotados, e os documentos e a carteirinha do plano. Se precisar de companhia na ida e na volta, consulte o acompanhamento com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/acompanhante-de-idosos-em-consultas-e-passeios-rj.html"
+    },
+    {
+      "id": 10,
+      "kicker": "NATUROPATIA",
+      "l1": "Práticas naturais como",
+      "l2": "apoio ao bem-estar",
+      "bullets": ["Complementam o cuidado", "Não substituem o médico", "Conte seus medicamentos antes"],
+      "texto": "As práticas naturais da naturopatia são complementares: apoiam o bem-estar, mas não substituem consultas, exames nem medicamentos prescritos. Informe sempre os medicamentos em uso. Saiba mais e converse com Mariano, que também é técnico de enfermagem e cuidador de idosos: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/terapia-naturopatia-para-idosos-rj.html"
+    },
+    {
+      "id": 11,
+      "kicker": "CUIDADOR EM CASA",
+      "l1": "O que faz um cuidador",
+      "l2": "de idosos em casa?",
+      "bullets": ["Companhia e apoio à rotina", "Atenção à autonomia e à mobilidade", "Comunicação com a família"],
+      "texto": "O cuidador de idosos em casa acompanha a rotina: companhia, apoio na higiene e na alimentação, atenção à mobilidade e à autonomia, e comunicação com a família. Procedimentos técnicos de enfermagem são de profissional habilitado. Consulte com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/cuidador-de-idosos-domiciliar-rj.html"
+    },
+    {
+      "id": 12,
+      "kicker": "TÉCNICO DE ENFERMAGEM",
+      "l1": "Confira o registro do",
+      "l2": "profissional contratado",
+      "bullets": ["Peça a inscrição no COREN-RJ", "Consulte no site do conselho", "Combine procedimentos antes"],
+      "texto": "Ao contratar um técnico de enfermagem, peça o número da inscrição no COREN-RJ e consulte a situação no site do conselho. Combine também quais procedimentos serão feitos, conforme a prescrição. Dúvidas? Fale com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/tecnico-de-enfermagem-para-idosos-rj.html"
+    },
+    {
+      "id": 13,
+      "kicker": "ONDE ATENDEMOS",
+      "l1": "Cuidador de idosos em",
+      "l2": "bairros do Rio de Janeiro",
+      "bullets": ["Zona Norte e Grande Tijuca", "Zona Sul, Barra e Recreio", "Jacarepaguá, Ilha e Realengo"],
+      "texto": "A CUIDAR IDOSOS atende bairros da Zona Norte, Zona Sul, Jacarepaguá, Barra da Tijuca, Ilha do Governador e Realengo. Veja a lista de bairros no site e confirme a disponibilidade para o seu com Mariano pelo WhatsApp: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/bairros-atendidos.html"
+    },
+    {
+      "id": 14,
+      "kicker": "CONHEÇA O MARIANO",
+      "l1": "Cuidador, técnico de",
+      "l2": "enfermagem e naturopata",
+      "bullets": ["Três áreas que se complementam", "Atendimento conversado com a família", "Contato 24 horas por WhatsApp"],
+      "texto": "Mariano é cuidador de idosos, técnico de enfermagem e terapeuta naturopata. O atendimento é conversado com a família, com respeito à autonomia da pessoa idosa. Contato por telefone e WhatsApp 24 horas: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/sobre-mariano-cuidador-tecnico-de-enfermagem-naturopata.html"
+    },
+    {
+      "id": 15,
+      "kicker": "DICA DE CUIDADO",
+      "l1": "Hidratação e alimentação:",
+      "l2": "atenção na rotina",
+      "bullets": ["Ofereça líquidos ao longo do dia", "Respeite o ritmo e as preferências", "Siga as orientações do médico"],
+      "texto": "Na rotina da pessoa idosa, vale oferecer líquidos ao longo do dia, respeitar o ritmo e as preferências nas refeições e seguir sempre as orientações do médico sobre dieta. Se precisar de apoio na rotina em casa, converse com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/cuidador-de-idosos-domiciliar-rj.html"
+    },
+    {
+      "id": 16,
+      "kicker": "DICA DE CUIDADO",
+      "l1": "Companhia e estímulo",
+      "l2": "fazem diferença",
+      "bullets": ["Conversa e atividades de que gosta", "Passeios no ritmo da pessoa", "Respeito à autonomia"],
+      "texto": "Companhia, conversa e atividades de que a pessoa idosa gosta fazem diferença no dia a dia. Passeios e visitas, no ritmo dela e respeitando a autonomia, ajudam a manter a vida social. Consulte o acompanhamento em passeios com Mariano: (21) 97202-5533.",
+      "link": "https://cuidaridososrj.com.br/acompanhante-de-idosos-em-consultas-e-passeios-rj.html"
+    }
+  ]
+}

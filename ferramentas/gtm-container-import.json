@@ -1,0 +1,165 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-10-17 20:00:00",
+  "containerVersion": {
+    "path": "accounts/6383194814/containers/267486027/versions/0",
+    "accountId": "6383194814",
+    "containerId": "267486027",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/6383194814/containers/267486027",
+      "accountId": "6383194814",
+      "containerId": "267486027",
+      "name": "cuidaridososrj.com.br",
+      "publicId": "GTM-NBR5GF59",
+      "usageContext": ["WEB"],
+      "fingerprint": "1760000000000",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6383194814/containers/267486027/workspaces?apiLink=container"
+    },
+    "tag": [
+      {
+        "accountId": "6383194814",
+        "containerId": "267486027",
+        "tagId": "1",
+        "name": "GA4 - Configuração (Google tag)",
+        "type": "googtag",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "tagId", "value": "G-FN027KMPDK" }
+        ],
+        "fingerprint": "1760000000001",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": { "type": "MAP" },
+        "consentSettings": { "consentStatus": "NOT_SET" }
+      },
+      {
+        "accountId": "6383194814",
+        "containerId": "267486027",
+        "tagId": "2",
+        "name": "GA4 - Evento click_whatsapp",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "false" },
+          { "type": "TEMPLATE", "key": "eventName", "value": "click_whatsapp" },
+          { "type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-FN027KMPDK" },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  { "type": "TEMPLATE", "key": "parameter", "value": "link_url" },
+                  { "type": "TEMPLATE", "key": "parameterValue", "value": "{{Click URL}}" }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  { "type": "TEMPLATE", "key": "parameter", "value": "page_path" },
+                  { "type": "TEMPLATE", "key": "parameterValue", "value": "{{Page Path}}" }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1760000000002",
+        "firingTriggerId": ["3"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": { "type": "MAP" },
+        "consentSettings": { "consentStatus": "NOT_SET" }
+      },
+      {
+        "accountId": "6383194814",
+        "containerId": "267486027",
+        "tagId": "4",
+        "name": "GA4 - Evento click_telefone",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "false" },
+          { "type": "TEMPLATE", "key": "eventName", "value": "click_telefone" },
+          { "type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-FN027KMPDK" },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  { "type": "TEMPLATE", "key": "parameter", "value": "page_path" },
+                  { "type": "TEMPLATE", "key": "parameterValue", "value": "{{Page Path}}" }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1760000000004",
+        "firingTriggerId": ["5"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": { "type": "MAP" },
+        "consentSettings": { "consentStatus": "NOT_SET" }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6383194814",
+        "containerId": "267486027",
+        "triggerId": "3",
+        "name": "Clique - WhatsApp (wa.me)",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "wa.me" }
+            ]
+          }
+        ],
+        "parameter": [
+          { "type": "BOOLEAN", "key": "waitForTags", "value": "true" },
+          { "type": "BOOLEAN", "key": "checkValidation", "value": "false" },
+          { "type": "TEMPLATE", "key": "waitForTagsTimeout", "value": "2000" }
+        ],
+        "fingerprint": "1760000000003"
+      },
+      {
+        "accountId": "6383194814",
+        "containerId": "267486027",
+        "triggerId": "5",
+        "name": "Clique - Telefone (tel:)",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "tel:" }
+            ]
+          }
+        ],
+        "parameter": [
+          { "type": "BOOLEAN", "key": "waitForTags", "value": "true" },
+          { "type": "BOOLEAN", "key": "checkValidation", "value": "false" },
+          { "type": "TEMPLATE", "key": "waitForTagsTimeout", "value": "2000" }
+        ],
+        "fingerprint": "1760000000005"
+      }
+    ],
+    "builtInVariable": [
+      { "accountId": "6383194814", "containerId": "267486027", "type": "PAGE_URL", "name": "Page URL" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "PAGE_HOSTNAME", "name": "Page Hostname" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "PAGE_PATH", "name": "Page Path" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "REFERRER", "name": "Referrer" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "EVENT", "name": "Event" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_ELEMENT", "name": "Click Element" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_CLASSES", "name": "Click Classes" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_ID", "name": "Click ID" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_TARGET", "name": "Click Target" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_URL", "name": "Click URL" },
+      { "accountId": "6383194814", "containerId": "267486027", "type": "CLICK_TEXT", "name": "Click Text" }
+    ],
+    "fingerprint": "1760000000006",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6383194814/containers/267486027/versions/0?apiLink=version"
+  }
+}
